@@ -25,19 +25,15 @@ This project is ideal for cybersecurity students, blue team analysts, or anyone 
 Edit `vtf.py` and insert your VirusTotal API key:
 
 ```python
-API_KEY = "your_virustotal_api_key"
+API_KEY = "virustotal_api_key"
 Get your key here: https://www.virustotal.com/gui/user/apikey
 
 2. Run the Script
-bash
-Copy
-Edit
+
 python3 vtf.py
+
 Expected output:
 
-less
-Copy
-Edit
 [*] Starting Chrome Extension Scan...
 
 [+] Scanning Extension ID: abcdefg1234567
@@ -46,38 +42,30 @@ Edit
 
 [+] Scanning Extension ID: malicious9876
     [!] Malicious extension detected.
-📷 (Optional: Add a screenshot here if desired)
 
-📂 Chrome Extension Location
+```
+### 📂 Chrome Extension Location
 The script automatically scans this folder:
 
-sql
-Copy
-Edit
+```
 %LOCALAPPDATA%\Google\Chrome\User Data\Default\Extensions
 Each extension’s version folder is compressed and analyzed.
+```
+### 🧰 Requirements
 
-🧰 Requirements
 Python 3.x
-
 requests module
 
 Install dependencies with:
-
-bash
-Copy
-Edit
+```
 pip install requests
-🧪 Example
-bash
-Copy
-Edit
+```
+### 🧪 Example
+```
 python3 vtf.py
-Sample run:
-
-less
-Copy
-Edit
+```
+### Sample run:
+```
 [*] Starting Chrome Extension Scan...
 
 [+] Scanning Extension ID: abc123
@@ -86,20 +74,16 @@ Edit
 
 [+] Scanning Extension ID: ext999
     [!] Malicious extension detected.
-🔧 Input Parameters
+```
+### 🔧 Input Parameters
 No input is needed during runtime — the tool automatically:
-
 Scans installed extensions
-
 Compresses them
-
 Hashes them
-
 Uploads to VirusTotal
-
 Shows results in real-time
 
-📚 Use Cases
+### 📚 Use Cases
 🧑‍🎓 Cybersecurity academic and mini projects
 
 🛡️ SOC analysis and malware detection
