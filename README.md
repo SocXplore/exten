@@ -77,10 +77,15 @@ python3 vtf.py
 ```
 ### 🔧 Input Parameters
 No input is needed during runtime — the tool automatically:
+
 Scans installed extensions
+
 Compresses them
+
 Hashes them
+
 Uploads to VirusTotal
+
 Shows results in real-time
 
 ### 📚 Use Cases
